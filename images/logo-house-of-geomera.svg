@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="16 40 128 128" preserveAspectRatio="none" role="img" aria-labelledby="hogTitle hogDesc">
+<title id="hogTitle">House of GeoMera</title>
+<desc id="hogDesc">A line-illustrated townhouse facade with the name House of GeoMera carved into the frieze above the windows, and a two-panel double door at the base.</desc>
+<rect x="32" y="54" width="96" height="114" fill="#E2D6C1" stroke="#6B6F2A" stroke-width="2"/>
+<line x1="16" y1="168" x2="144" y2="168" stroke="#6E4A32" stroke-width="1.5"/>
+<rect x="26" y="40" width="108" height="16" fill="#E2D6C1" stroke="#6E4A32" stroke-width="1.4"/>
+<line x1="26" y1="40" x2="134" y2="40" stroke="#B98F4E" stroke-width="1.2"/>
+<line x1="26" y1="56" x2="134" y2="56" stroke="#B98F4E" stroke-width="1.2"/>
+<text x="80" y="51.5" text-anchor="middle" font-family="'Cormorant Garamond', Georgia, serif" font-weight="600" font-size="10.5" letter-spacing="0.2" fill="#6E4A32">House of GeoMera</text>
+<rect x="46" y="64" width="22" height="26" fill="#9C8B70" stroke="#6E4A32" stroke-width="1.2"/>
+<line x1="57" y1="64" x2="57" y2="90" stroke="#6E4A32" stroke-width="0.8"/>
+<line x1="46" y1="77" x2="68" y2="77" stroke="#6E4A32" stroke-width="0.8"/>
+<rect x="94" y="64" width="22" height="26" fill="#9C8B70" stroke="#6E4A32" stroke-width="1.2"/>
+<line x1="105" y1="64" x2="105" y2="90" stroke="#6E4A32" stroke-width="0.8"/>
+<line x1="94" y1="77" x2="116" y2="77" stroke="#6E4A32" stroke-width="0.8"/>
+<rect x="46" y="100" width="22" height="26" fill="#9C8B70" stroke="#6E4A32" stroke-width="1.2"/>
+<line x1="57" y1="100" x2="57" y2="126" stroke="#6E4A32" stroke-width="0.8"/>
+<line x1="46" y1="113" x2="68" y2="113" stroke="#6E4A32" stroke-width="0.8"/>
+<rect x="94" y="100" width="22" height="26" fill="#9C8B70" stroke="#6E4A32" stroke-width="1.2"/>
+<line x1="105" y1="100" x2="105" y2="126" stroke="#6E4A32" stroke-width="0.8"/>
+<line x1="94" y1="113" x2="116" y2="113" stroke="#6E4A32" stroke-width="0.8"/>
+<line x1="64" y1="133" x2="64" y2="168" stroke="#6E4A32" stroke-width="2"/>
+<line x1="100" y1="133" x2="100" y2="168" stroke="#6E4A32" stroke-width="2"/>
+<rect x="62" y="133" width="40" height="5" fill="#6E4A32"/>
+<rect x="68" y="138" width="13" height="30" fill="#B98F4E" stroke="#6E4A32" stroke-width="1.3"/>
+<rect x="83" y="138" width="13" height="30" fill="#B98F4E" stroke="#6E4A32" stroke-width="1.3"/>
+<line x1="82" y1="138" x2="82" y2="168" stroke="#6E4A32" stroke-width="1.3"/>
+<rect x="71" y="142" width="7" height="10" fill="none" stroke="#6E4A32" stroke-width="0.8"/>
+<rect x="71" y="156" width="7" height="9" fill="none" stroke="#6E4A32" stroke-width="0.8"/>
+<rect x="86" y="142" width="7" height="10" fill="none" stroke="#6E4A32" stroke-width="0.8"/>
+<rect x="86" y="156" width="7" height="9" fill="none" stroke="#6E4A32" stroke-width="0.8"/>
+<circle cx="79" cy="153" r="1.3" fill="#6E4A32"/>
+<circle cx="85" cy="153" r="1.3" fill="#6E4A32"/>
+</svg>

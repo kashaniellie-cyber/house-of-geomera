@@ -1,0 +1,616 @@
+/* ==========================================================================
+   Ellie's Connect — Brand Stylesheet
+   ========================================================================== */
+
+:root {
+  /* House of GeoMera palette (logo-matched) */
+  --linen: #f4efe6;
+  --sand: #e2d6c1;
+  --taupe: #9c8b70;
+  --olive: #6b6f2a;
+  --brown: #6e4a32;
+  --brass: #b98f4e;
+
+  /* Semantic aliases (kept so existing rules/inline styles need no rewrite) */
+  --cream: var(--linen);
+  --cream-light: var(--sand);
+  --burgundy: var(--brown);
+  --burgundy-dark: #5a3a28;
+  --gold: var(--brass);
+  --gold-light: var(--sand);
+  --gold-logo: var(--brass);
+  --text-dark: var(--brown);
+  --text-muted: rgba(110, 74, 50, 0.65);
+  --border: var(--taupe);
+  --serif: 'Cormorant Garamond', 'Playfair Display', Georgia, 'Times New Roman', serif;
+  --serif-body: 'EB Garamond', Georgia, 'Times New Roman', serif;
+  --sans: 'Jost', 'Helvetica Neue', Arial, sans-serif;
+  --max-width: 1200px;
+}
+
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  background: var(--cream);
+  color: var(--text-dark);
+  font-family: var(--serif-body);
+  font-size: 18px;
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+}
+
+img { max-width: 100%; display: block; }
+
+a { color: inherit; text-decoration: none; }
+
+h1, h2, h3, h4 {
+  font-family: var(--serif);
+  font-weight: 500;
+  color: var(--burgundy);
+  line-height: 1.15;
+  margin: 0 0 0.5em;
+}
+
+h1 { font-size: clamp(2.4rem, 5vw, 4rem); font-weight: 400; }
+h2 { font-size: clamp(1.8rem, 3.2vw, 2.6rem); }
+h3 { font-size: clamp(1.3rem, 2.2vw, 1.7rem); }
+
+p { margin: 0 0 1.2em; }
+
+.eyebrow {
+  font-family: var(--sans);
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  font-size: 0.78rem;
+  color: var(--gold);
+  font-weight: 600;
+}
+
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 32px;
+}
+
+/* ---------- Header ---------- */
+.site-header {
+  border-bottom: 1px solid var(--border);
+  background: var(--cream);
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 18px 32px;
+  gap: 24px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-shrink: 0;
+}
+
+.logo-mark {
+  width: 52px;
+  height: 52px;
+  background: var(--burgundy);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 3px;
+}
+
+.logo-text {
+  font-family: var(--serif);
+  font-size: 1.15rem;
+  color: var(--burgundy);
+  line-height: 1.1;
+}
+
+.logo-text span { display: block; font-size: 0.95em; }
+
+.header-logo-img { height: 58px; width: auto; display: block; }
+
+nav.main-nav {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  font-family: var(--serif-body);
+  font-size: 1.02rem;
+}
+
+nav.main-nav > ul {
+  display: flex;
+  list-style: none;
+  gap: 26px;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+}
+
+nav.main-nav .has-dropdown { position: relative; }
+
+nav.main-nav .dropdown {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: var(--cream-light);
+  border: 1px solid var(--border);
+  min-width: 220px;
+  padding: 10px 0;
+  margin-top: 12px;
+}
+
+nav.main-nav .has-dropdown:hover .dropdown,
+nav.main-nav .has-dropdown:focus-within .dropdown { display: block; }
+
+nav.main-nav .dropdown a {
+  display: block;
+  padding: 9px 20px;
+  font-size: 0.96rem;
+}
+
+nav.main-nav .dropdown a:hover { background: var(--cream); color: var(--gold); }
+
+nav.main-nav a:hover, nav.main-nav .current { color: var(--burgundy); border-bottom: 1px solid var(--olive); }
+
+.nav-lang { font-size: 0.9rem; color: var(--text-muted); }
+
+.nav-toggle {
+  display: none;
+  background: none;
+  border: 1px solid var(--border);
+  padding: 8px 12px;
+  font-family: var(--sans);
+  cursor: pointer;
+}
+
+/* ---------- Buttons ---------- */
+.btn {
+  display: inline-block;
+  font-family: var(--sans);
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-size: 0.82rem;
+  font-weight: 600;
+  padding: 15px 34px;
+  border: 1px solid var(--burgundy);
+  color: var(--burgundy);
+  background: transparent;
+  transition: background 0.2s, color 0.2s;
+  cursor: pointer;
+}
+
+.btn:hover { background: var(--burgundy); color: var(--cream-light); }
+
+.btn-solid { background: var(--burgundy); color: var(--cream-light); }
+.btn-solid:hover { background: var(--burgundy-dark); }
+
+/* ---------- Hero ---------- */
+.hero {
+  padding: 90px 0 70px;
+}
+
+.hero .eyebrow { margin-bottom: 18px; display: block; }
+
+.hero h1 { max-width: 850px; margin-bottom: 34px; }
+
+.hero-actions { margin-bottom: 56px; }
+
+.stat-row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 22px;
+  max-width: 900px;
+}
+
+.stat-box {
+  border: 1px solid var(--border);
+  padding: 34px 18px;
+  text-align: center;
+}
+
+.stat-num {
+  font-family: var(--serif);
+  font-size: 2.6rem;
+  color: var(--burgundy);
+  line-height: 1;
+  margin-bottom: 8px;
+}
+
+.stat-label {
+  font-family: var(--sans);
+  font-size: 0.82rem;
+  letter-spacing: 0.04em;
+  color: var(--text-muted);
+}
+
+/* ---------- Sections ---------- */
+section { padding: 70px 0; }
+
+.section-alt { background: var(--cream-light); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
+
+.section-intro { max-width: 760px; margin-bottom: 46px; }
+
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 34px;
+}
+
+.grid-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 46px;
+  align-items: start;
+}
+
+.card {
+  border: 1px solid var(--border);
+  padding: 40px 32px;
+  background: var(--cream-light);
+}
+
+.card h3 { margin-bottom: 14px; }
+
+.card .num {
+  font-family: var(--serif);
+  color: var(--gold);
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.pillar-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.pillar-list li {
+  padding: 18px 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.pillar-list li:first-child { border-top: 1px solid var(--border); }
+
+/* ---------- Quote / Pull ---------- */
+.pull-quote {
+  font-family: var(--serif);
+  font-size: clamp(1.5rem, 2.6vw, 2.1rem);
+  color: var(--burgundy);
+  font-weight: 400;
+  border-left: 3px solid var(--gold);
+  padding-left: 28px;
+  margin: 0;
+}
+
+/* ---------- Footer / Invitation ---------- */
+.footer-invite {
+  background: var(--burgundy);
+  color: var(--cream-light);
+  text-align: center;
+  padding: 76px 0 0;
+}
+
+.footer-logo { margin-bottom: 34px; }
+
+.footer-logo img {
+  height: 96px;
+  width: auto;
+  margin: 0 auto;
+}
+
+.footer-invite .eyebrow { color: var(--gold-logo); display: block; margin-bottom: 18px; }
+
+.footer-invite h2 {
+  color: var(--cream-light);
+  max-width: 620px;
+  margin: 0 auto 18px;
+}
+
+.footer-invite .footer-note {
+  font-family: var(--serif-body);
+  font-size: 1.15rem;
+  color: #d9cdb0;
+  max-width: 440px;
+  margin: 0 auto 40px;
+}
+
+.footer-contact-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 34px;
+  flex-wrap: wrap;
+  margin-bottom: 52px;
+}
+
+.footer-contact-links a {
+  font-family: var(--serif);
+  font-size: 1.25rem;
+  color: var(--cream-light);
+  border-bottom: 1px solid var(--gold-logo);
+  padding-bottom: 3px;
+  transition: color 0.2s;
+}
+
+.footer-contact-links a:hover { color: var(--gold-logo); }
+
+.footer-contact-links .divider-dot { color: var(--gold-logo); }
+
+.footer-bottom {
+  border-top: 1px solid rgba(236, 178, 92, 0.28);
+  padding: 24px 0;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+  font-family: var(--sans);
+  font-size: 0.78rem;
+  letter-spacing: 0.05em;
+}
+
+.footer-bottom .cities { color: #b8a97e; }
+.footer-bottom .copyright { color: #8a7a5e; }
+
+/* ---------- Page header (interior pages) ---------- */
+.page-hero {
+  padding: 64px 0 50px;
+  border-bottom: 1px solid var(--border);
+}
+
+.breadcrumb {
+  font-family: var(--sans);
+  font-size: 0.78rem;
+  letter-spacing: 0.05em;
+  color: var(--text-muted);
+  margin-bottom: 22px;
+  text-transform: uppercase;
+}
+
+.breadcrumb a { color: var(--gold); }
+
+.about-portrait { border: 1px solid var(--border); padding: 10px; background: var(--cream-light); }
+.about-portrait img { width: 100%; height: auto; aspect-ratio: 4 / 5; object-fit: cover; object-position: top; }
+
+.prose { max-width: 780px; }
+.prose h2 { margin-top: 1.6em; }
+.prose h3 { margin-top: 1.3em; color: var(--text-dark); }
+.prose ul { padding-left: 22px; }
+.prose li { margin-bottom: 8px; }
+
+table.data-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 24px 0;
+  font-size: 0.95rem;
+}
+
+table.data-table th, table.data-table td {
+  border: 1px solid var(--border);
+  padding: 10px 14px;
+  text-align: left;
+}
+
+table.data-table th {
+  background: var(--cream-light);
+  font-family: var(--sans);
+  font-size: 0.8rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--burgundy);
+}
+
+.source-note {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  border-top: 1px solid var(--border);
+  padding-top: 18px;
+  margin-top: 40px;
+}
+
+.city-tabs {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+}
+
+.city-tabs a {
+  font-family: var(--sans);
+  font-size: 0.82rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  border: 1px solid var(--border);
+}
+
+.city-tabs a.active, .city-tabs a:hover { background: var(--burgundy); color: var(--cream-light); border-color: var(--burgundy); }
+
+.city-block { padding: 30px 0 10px; border-top: 1px solid var(--border); margin-top: 10px; }
+.city-block:first-of-type { border-top: none; margin-top: 0; }
+
+.neigh-block { padding: 26px 0; border-bottom: 1px solid var(--border); }
+.neigh-block:last-child { border-bottom: none; }
+
+/* ---------- House of GeoMera — Navigation (locked, do not restructure) ---------- */
+.nav-grid {
+  display: grid;
+  grid-template-columns: 92px repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 7px;
+  align-items: stretch;
+  padding: 14px 0;
+}
+
+.logo-cell { grid-row: 1 / 3; grid-column: 1; position: relative; }
+
+.logo-cell a { display: block; width: 100%; height: 100%; }
+
+.logo-cell svg, .logo-cell img { display: block; width: 100%; height: 100%; object-fit: fill; }
+
+.logo-cell .lang-tag {
+  position: absolute;
+  bottom: 2px;
+  right: 2px;
+  font-size: 8px;
+  color: var(--brass);
+  border-bottom: 1px solid var(--brass);
+  text-decoration: none;
+}
+
+.nav-grid .tab {
+  border: 1px solid var(--taupe);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-family: var(--sans);
+  font-size: 10.5px;
+  letter-spacing: 0.06em;
+  color: var(--brown);
+  padding: 8px 6px;
+  text-decoration: none;
+  transition: border-color 0.15s, background 0.15s, color 0.15s;
+}
+
+.nav-grid .tab:hover, .nav-grid .tab.current {
+  border-color: var(--olive);
+  background: #ede3ce;
+  color: var(--olive);
+}
+
+.nav-grid .r1c2 { grid-row: 1; grid-column: 2; }
+.nav-grid .r1c3 { grid-row: 1; grid-column: 3; }
+.nav-grid .r1c4 { grid-row: 1; grid-column: 4; }
+.nav-grid .r2c2 { grid-row: 2; grid-column: 2; }
+.nav-grid .r2c3 { grid-row: 2; grid-column: 3; }
+.nav-grid .r2c4 { grid-row: 2; grid-column: 4; }
+
+/* ---------- House of GeoMera — Footer (locked) ---------- */
+.hog-footer { background: var(--olive); }
+
+.hog-footer-inner {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 36px;
+  padding: 44px 32px 36px;
+}
+
+.hog-footer-brand { flex: 0 0 150px; }
+
+.hog-footer-brand svg, .hog-footer-brand img { display: block; width: 150px; height: 150px; object-fit: fill; }
+
+.hog-footer-contact { flex: 0 1 460px; }
+
+.hog-footer-tagline {
+  margin-top: 12px;
+  font-family: 'Marcellus', serif;
+  font-size: 11px;
+  letter-spacing: 0.14em;
+  color: var(--linen);
+  text-align: center;
+}
+
+.hog-footer-divider { flex: 0 0 1px; align-self: stretch; background: var(--linen); opacity: 0.4; }
+
+.hog-footer-contact { flex: 1; padding-top: 4px; color: var(--linen); }
+
+.hog-footer-contact h2 {
+  font-family: var(--serif);
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 8px;
+  color: var(--linen);
+}
+
+.hog-footer-note {
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: 15px;
+  color: var(--linen);
+  margin-bottom: 18px;
+  max-width: 400px;
+  line-height: 1.55;
+}
+
+.hog-contact-link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  color: var(--linen);
+  font-family: var(--serif);
+  font-size: 18px;
+  margin-bottom: 12px;
+  border-bottom: 1px solid rgba(244, 239, 230, 0.4);
+  padding-bottom: 6px;
+  width: fit-content;
+}
+
+.hog-contact-link svg { flex-shrink: 0; }
+
+.hog-phone { font-family: var(--sans); }
+
+.hog-country {
+  font-family: var(--sans);
+  font-weight: 500;
+  color: var(--linen);
+  font-size: 13px;
+  margin-right: 10px;
+}
+
+.hog-footer-bottom {
+  border-top: 1px solid rgba(244, 239, 230, 0.3);
+  padding: 15px 32px;
+  text-align: center;
+  font-family: 'Marcellus', serif;
+  font-size: 11px;
+  letter-spacing: 0.06em;
+  color: var(--linen);
+}
+
+@media (max-width: 700px) {
+  .nav-grid { grid-template-columns: 64px repeat(3, 1fr); gap: 4px; }
+  .nav-grid .tab { font-size: 9px; padding: 6px 3px; letter-spacing: 0.03em; }
+  .hog-footer-inner { flex-direction: column; align-items: center; text-align: center; gap: 20px; }
+  .hog-footer-divider { display: none; }
+  .hog-contact-link { margin-left: auto; margin-right: auto; }
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 900px) {
+  .grid-3 { grid-template-columns: 1fr; }
+  .grid-2 { grid-template-columns: 1fr; }
+  .stat-row { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 760px) {
+  nav.main-nav { display: none; }
+  .nav-toggle { display: block; }
+  .header-inner { flex-wrap: wrap; }
+  nav.main-nav.open {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    order: 3;
+    padding-top: 20px;
+    gap: 4px;
+  }
+  nav.main-nav.open > ul { flex-direction: column; align-items: flex-start; gap: 4px; width: 100%; }
+  nav.main-nav .dropdown { position: static; display: block; margin-top: 4px; border: none; padding-left: 14px; }
+  .footer-invite { padding-top: 60px; }
+  .footer-contact-links { flex-direction: column; gap: 18px; }
+}

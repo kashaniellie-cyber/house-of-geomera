@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>House of GeoMera — Navigation Preview (not live)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Jost:wght@500;600&display=swap">
+<style>
+  :root {
+    --linen: #f4efe6;
+    --sand: #e2d6c1;
+    --taupe: #9c8b70;
+    --olive: #6b6f2a;
+    --brown: #6e4a32;
+    --brass: #b98f4e;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: #ded4c2;
+    font-family: 'Jost', sans-serif;
+    padding: 60px 20px;
+  }
+  .note {
+    max-width: 720px;
+    margin: 0 auto 24px;
+    font-size: 14px;
+    color: var(--brown);
+    background: var(--sand);
+    border: 1px solid var(--taupe);
+    padding: 14px 18px;
+  }
+  .site-header {
+    max-width: 900px;
+    margin: 0 auto;
+    background: var(--linen);
+    border-bottom: 1px solid var(--taupe);
+    padding: 16px 26px;
+  }
+  .nav-grid {
+    display: grid;
+    grid-template-columns: 92px repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 7px;
+    align-items: stretch;
+  }
+  .logo-cell {
+    grid-row: 1 / 3;
+    grid-column: 1;
+    position: relative;
+  }
+  .logo-cell img, .logo-cell svg {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+  .lang-tag {
+    position: absolute;
+    bottom: 2px;
+    right: 2px;
+    font-size: 8px;
+    color: var(--brass);
+    border-bottom: 1px solid var(--brass);
+    text-decoration: none;
+  }
+  .tab {
+    border: 1px solid var(--taupe);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 10.5px;
+    letter-spacing: 0.06em;
+    color: var(--brown);
+    padding: 8px 6px;
+    text-decoration: none;
+    transition: border-color 0.15s, background 0.15s, color 0.15s;
+  }
+  .tab:hover, .tab.current {
+    border-color: var(--olive);
+    background: #ede3ce;
+    color: var(--olive);
+  }
+  .r1c2 { grid-row: 1; grid-column: 2; }
+  .r1c3 { grid-row: 1; grid-column: 3; }
+  .r1c4 { grid-row: 1; grid-column: 4; }
+  .r2c2 { grid-row: 2; grid-column: 2; }
+  .r2c3 { grid-row: 2; grid-column: 3; }
+  .r2c4 { grid-row: 2; grid-column: 4; }
+</style>
+</head>
+<body>
+
+<div class="note">Preview only — this file is not linked from the live site and nothing here has been published. Hover the tabs to see the interactive state. Resize the window to see the grid hold its alignment at different widths.</div>
+
+<header class="site-header">
+  <div class="nav-grid">
+    <div class="logo-cell">
+      <svg viewBox="16 40 128 128" preserveAspectRatio="none" role="img" aria-label="House of GeoMera">
+        <rect x="32" y="54" width="96" height="114" fill="#E2D6C1" stroke="#6B6F2A" stroke-width="2"/>
+        <line x1="16" y1="168" x2="144" y2="168" stroke="#6E4A32" stroke-width="1.5"/>
+        <rect x="26" y="40" width="108" height="16" fill="#E2D6C1" stroke="#6E4A32" stroke-width="1.4"/>
+        <line x1="26" y1="40" x2="134" y2="40" stroke="#B98F4E" stroke-width="1.2"/>
+        <line x1="26" y1="56" x2="134" y2="56" stroke="#B98F4E" stroke-width="1.2"/>
+        <text x="80" y="51.5" text-anchor="middle" font-family="'Cormorant Garamond', Georgia, serif" font-weight="600" font-size="10.5" letter-spacing="0.2" fill="#6E4A32">House of GeoMera</text>
+        <rect x="46" y="64" width="22" height="26" fill="#9C8B70" stroke="#6E4A32" stroke-width="1.2"/>
+        <line x1="57" y1="64" x2="57" y2="90" stroke="#6E4A32" stroke-width="0.8"/>
+        <line x1="46" y1="77" x2="68" y2="77" stroke="#6E4A32" stroke-width="0.8"/>
+        <rect x="94" y="64" width="22" height="26" fill="#9C8B70" stroke="#6E4A32" stroke-width="1.2"/>
+        <line x1="105" y1="64" x2="105" y2="90" stroke="#6E4A32" stroke-width="0.8"/>
+        <line x1="94" y1="77" x2="116" y2="77" stroke="#6E4A32" stroke-width="0.8"/>
+        <rect x="46" y="100" width="22" height="26" fill="#9C8B70" stroke="#6E4A32" stroke-width="1.2"/>
+        <line x1="57" y1="100" x2="57" y2="126" stroke="#6E4A32" stroke-width="0.8"/>
+        <line x1="46" y1="113" x2="68" y2="113" stroke="#6E4A32" stroke-width="0.8"/>
+        <rect x="94" y="100" width="22" height="26" fill="#9C8B70" stroke="#6E4A32" stroke-width="1.2"/>
+        <line x1="105" y1="100" x2="105" y2="126" stroke="#6E4A32" stroke-width="0.8"/>
+        <line x1="94" y1="113" x2="116" y2="113" stroke="#6E4A32" stroke-width="0.8"/>
+        <line x1="64" y1="133" x2="64" y2="168" stroke="#6E4A32" stroke-width="2"/>
+        <line x1="100" y1="133" x2="100" y2="168" stroke="#6E4A32" stroke-width="2"/>
+        <rect x="62" y="133" width="40" height="5" fill="#6E4A32"/>
+        <rect x="68" y="138" width="13" height="30" fill="#B98F4E" stroke="#6E4A32" stroke-width="1.3"/>
+        <rect x="83" y="138" width="13" height="30" fill="#B98F4E" stroke="#6E4A32" stroke-width="1.3"/>
+        <line x1="82" y1="138" x2="82" y2="168" stroke="#6E4A32" stroke-width="1.3"/>
+        <rect x="71" y="142" width="7" height="10" fill="none" stroke="#6E4A32" stroke-width="0.8"/>
+        <rect x="71" y="156" width="7" height="9" fill="none" stroke="#6E4A32" stroke-width="0.8"/>
+        <rect x="86" y="142" width="7" height="10" fill="none" stroke="#6E4A32" stroke-width="0.8"/>
+        <rect x="86" y="156" width="7" height="9" fill="none" stroke="#6E4A32" stroke-width="0.8"/>
+        <circle cx="79" cy="153" r="1.3" fill="#6E4A32"/>
+        <circle cx="85" cy="153" r="1.3" fill="#6E4A32"/>
+      </svg>
+      <a href="#" class="lang-tag">中文</a>
+    </div>
+    <a href="#" class="tab current r1c2">Home</a>
+    <a href="#" class="tab r1c3">Advisory</a>
+    <a href="#" class="tab r1c4">Capitals</a>
+    <a href="#" class="tab r2c2">About Ellie</a>
+    <a href="#" class="tab r2c3">Market Insights</a>
+    <a href="#" class="tab r2c4">Manhattan</a>
+  </div>
+</header>
+
+</body>
+</html>
