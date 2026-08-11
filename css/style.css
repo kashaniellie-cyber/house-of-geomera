@@ -260,14 +260,18 @@ section { padding: 70px 0; }
 .card {
   border: 1px solid var(--border);
   padding: 40px 32px;
-  background: var(--cream-light);
+  background: var(--olive);
 }
 
-.card h3 { margin-bottom: 14px; }
+.card h3 { margin-bottom: 14px; color: var(--linen); }
+
+.card p { color: var(--linen); }
+
+.card a { color: var(--sand) !important; }
 
 .card .num {
   font-family: var(--serif);
-  color: var(--gold);
+  color: var(--sand);
   font-size: 1.1rem;
   margin-bottom: 10px;
   display: block;
