@@ -471,6 +471,7 @@ table.data-table th {
 
 .nav-grid .tab {
   border: 1px solid var(--taupe);
+  background: var(--linen);
   display: flex;
   align-items: center;
   justify-content: center;
