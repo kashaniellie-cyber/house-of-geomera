@@ -388,8 +388,10 @@ section { padding: 70px 0; }
 .breadcrumb a { color: var(--gold); }
 
 .city-hero { max-width: 640px; margin: 0 auto; text-align: center; }
-.city-hero h1 { font-weight: 700; color: var(--olive); }
-.city-hero-sub { font-family: var(--serif); font-style: italic; color: var(--text-muted); font-size: 1.1rem; margin: 0 auto; }
+.city-hero h1 { font-weight: 700; color: var(--olive); margin-bottom: 0.2em; }
+.city-hero-sub { font-family: var(--serif); font-weight: 700; color: var(--olive); font-size: 1.3rem; margin: 0 auto; }
+
+.page-hero-compact { padding: 40px 0 34px; min-height: 150px; display: flex; align-items: center; justify-content: center; }
 
 .about-portrait { border: 1px solid var(--border); padding: 10px; background: var(--cream-light); }
 .about-portrait img { width: 100%; height: auto; aspect-ratio: 4 / 5; object-fit: cover; object-position: top; }
