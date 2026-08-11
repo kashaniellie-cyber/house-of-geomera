@@ -78,7 +78,7 @@ p { margin: 0 0 1.2em; }
 /* ---------- Header ---------- */
 .site-header {
   border-bottom: 1px solid var(--border);
-  background: var(--cream);
+  background: var(--olive);
 }
 
 .header-inner {
