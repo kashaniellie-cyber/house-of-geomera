@@ -49,7 +49,7 @@ a { color: inherit; text-decoration: none; }
 h1, h2, h3, h4 {
   font-family: var(--serif);
   font-weight: 500;
-  color: var(--burgundy);
+  color: var(--olive);
   line-height: 1.15;
   margin: 0 0 0.5em;
 }
@@ -388,7 +388,7 @@ section { padding: 70px 0; }
 
 .prose { max-width: 780px; }
 .prose h2 { margin-top: 1.6em; }
-.prose h3 { margin-top: 1.3em; color: var(--text-dark); }
+.prose h3 { margin-top: 1.3em; color: var(--olive); }
 .prose ul { padding-left: 22px; }
 .prose li { margin-bottom: 8px; }
 
