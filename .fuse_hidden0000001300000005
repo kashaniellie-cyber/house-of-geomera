@@ -33,14 +33,7 @@
       </div>
       <a href="index.html" class="tab r1c2">Home</a>
       <a href="advisory.html" class="tab r1c3">Advisory</a>
-      <div class="tab-cell r1c4">
-        <a href="capitals.html" class="tab">3 Capitals</a>
-        <div class="tab-dropdown">
-          <a href="capitals.html#dubai">Dubai</a>
-          <a href="capitals.html#london">London</a>
-          <a href="capitals.html#new-york">New York</a>
-        </div>
-      </div>
+      <a href="capitals.html" class="tab r1c4">3 Capitals</a>
       <a href="about.html" class="tab r2c2">About Ellie</a>
       <a href="market-insights.html" class="tab r2c3">Market Insights</a>
       <a href="manhattan-neighborhoods.html" class="tab r2c4 current">Manhattan</a>
