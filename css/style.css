@@ -526,6 +526,7 @@ table.data-table th {
 
 .tab-dropdown a:first-child { border-top: none; }
 .tab-dropdown a:hover { background: #ede3ce; color: var(--olive); }
+.tab-dropdown a.current { color: var(--olive); font-weight: 600; }
 
 .nav-grid .r1c2 { grid-row: 1; grid-column: 2; }
 .nav-grid .r1c3 { grid-row: 1; grid-column: 3; }
