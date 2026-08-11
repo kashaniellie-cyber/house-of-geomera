@@ -215,6 +215,7 @@ nav.main-nav a:hover, nav.main-nav .current { color: var(--burgundy); border-bot
 
 .stat-box {
   border: 1px solid var(--border);
+  background: var(--olive);
   padding: 34px 18px;
   text-align: center;
 }
@@ -222,16 +223,18 @@ nav.main-nav a:hover, nav.main-nav .current { color: var(--burgundy); border-bot
 .stat-num {
   font-family: var(--serif);
   font-size: 2.6rem;
-  color: var(--burgundy);
+  font-weight: 700;
+  color: var(--linen);
   line-height: 1;
   margin-bottom: 8px;
 }
 
 .stat-label {
   font-family: var(--sans);
+  font-weight: 700;
   font-size: 0.82rem;
   letter-spacing: 0.04em;
-  color: var(--text-muted);
+  color: var(--linen);
 }
 
 /* ---------- Sections ---------- */
