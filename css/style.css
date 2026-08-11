@@ -393,7 +393,7 @@ section { padding: 70px 0; }
 
 .page-hero-compact { padding: 40px 0 34px; min-height: 150px; display: flex; align-items: center; justify-content: center; }
 
-.about-portrait { border: 1px solid var(--border); padding: 10px; background: var(--cream-light); }
+.about-portrait { border: 1px solid var(--olive); padding: 10px; background: var(--olive); }
 .about-portrait img { width: 100%; height: auto; aspect-ratio: 4 / 5; object-fit: cover; object-position: top; }
 
 .prose { max-width: 780px; }
