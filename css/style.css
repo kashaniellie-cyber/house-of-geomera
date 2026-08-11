@@ -401,8 +401,9 @@ section { padding: 70px 0; }
 .prose { max-width: 780px; }
 .prose h2 { margin-top: 1.6em; }
 .prose h3 { margin-top: 1.3em; color: var(--olive); }
-.prose ul { padding-left: 22px; }
-.prose li { margin-bottom: 8px; }
+.prose ul { list-style: none; padding-left: 0; }
+.prose li { position: relative; padding-left: 22px; margin-bottom: 12px; }
+.prose li::before { content: "\2013"; position: absolute; left: 0; color: var(--olive); font-weight: 700; }
 
 table.data-table {
   width: 100%;
