@@ -502,17 +502,16 @@ table.data-table th {
 
 .hog-footer-inner {
   display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  gap: 36px;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
   padding: 44px 32px 36px;
 }
 
-.hog-footer-brand { flex: 0 0 150px; }
+.hog-footer-brand { flex: none; }
 
-.hog-footer-brand svg, .hog-footer-brand img { display: block; width: 150px; height: 150px; object-fit: fill; }
-
-.hog-footer-contact { flex: 0 1 460px; }
+.hog-footer-brand svg, .hog-footer-brand img { display: block; width: 150px; height: 150px; object-fit: fill; margin: 0 auto; }
 
 .hog-footer-tagline {
   margin-top: 12px;
@@ -523,9 +522,9 @@ table.data-table th {
   text-align: center;
 }
 
-.hog-footer-divider { flex: 0 0 1px; align-self: stretch; background: var(--linen); opacity: 0.4; }
+.hog-footer-divider { display: none; }
 
-.hog-footer-contact { flex: 1; padding-top: 4px; color: var(--linen); }
+.hog-footer-contact { flex: none; padding-top: 0; color: var(--linen); display: flex; flex-direction: column; align-items: center; }
 
 .hog-footer-contact h2 {
   font-family: var(--serif);
@@ -548,12 +547,15 @@ table.data-table th {
 .hog-contact-link {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 10px;
   text-decoration: none;
   color: var(--linen);
   font-family: var(--serif);
   font-size: 18px;
   margin-bottom: 12px;
+  margin-left: auto;
+  margin-right: auto;
   border-bottom: 1px solid rgba(244, 239, 230, 0.4);
   padding-bottom: 6px;
   width: fit-content;
