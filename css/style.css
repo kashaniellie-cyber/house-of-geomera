@@ -396,6 +396,8 @@ section { padding: 70px 0; }
 .about-portrait { border: 1px solid var(--olive); padding: 10px; background: var(--olive); }
 .about-portrait img { width: 100%; height: auto; aspect-ratio: 4 / 5; object-fit: cover; object-position: top; }
 
+.prose strong, .prose b { color: var(--olive); }
+
 .prose { max-width: 780px; }
 .prose h2 { margin-top: 1.6em; }
 .prose h3 { margin-top: 1.3em; color: var(--olive); }
